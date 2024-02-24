@@ -1,8 +1,5 @@
-# Define a constant for the prompt message
-PROMPT_MESSAGE = "Enter something: "
-
 # Get input from the user
-user_input = input(PROMPT_MESSAGE)
+user_input = input("Enter something: ")  # Prompt the user to enter some input and store it in the variable user_input
 
 # Print the inputted data
-print("You entered:", user_input)
+print("You entered:", user_input)  # Print the inputted data along with a message
