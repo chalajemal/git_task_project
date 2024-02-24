@@ -1,8 +1,14 @@
 # Get input from the user
 user_input = input("Enter something: ")  # Prompt the user to enter some input and store it in the variable user_input
 
-# Reverse the inputted data
-reversed_input = user_input[::-1]
+# Remove spaces and convert to lowercase for case-insensitive comparison
+cleaned_input = user_input.replace(" ", "").lower()
 
-# Print the reversed input
-print("Reversed input:", reversed_input)
+# Check if the cleaned input is a palindrome
+is_palindrome = cleaned_input == cleaned_input[::-1]
+
+# Print the result
+if is_palindrome:
+    print("The input is a palindrome!")
+else:
+    print("The input is not a palindrome.")
